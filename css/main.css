@@ -1,0 +1,308 @@
+main{
+  height: auto;
+  position: relative;
+}
+#introduce {
+  /*! background-color: #eee; */
+  height: 100vh;
+}
+#introduce div.wrap{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+#introduce h2 {
+
+
+}
+#introduce .wrap>ul {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+#introduce .wrap>ul>li {
+  width: 50%;
+  padding: 80px;
+}
+#introduce .wrap>ul>li:nth-child(1){
+  border-radius: 30px;
+  background: #f8f8f8 url(../img/img_dokdo.png) no-repeat right bottom;
+}
+#introduce .wrap > ul > li:nth-child(1) h3{
+  font-size: 28px;
+  font-weight: 700;
+}
+#introduce .wrap > ul > li:nth-child(1) p{
+  margin: 40px 0 70px;
+  line-height: 1.6;
+  color: #555;
+}
+#introduce .wrap > ul > li:nth-child(1) a{
+  border: 3px solid;
+  border-color: #09847F;
+  color: #09847F;
+  padding: 20px 35px;
+  border-radius: 35px;
+  display: inline-block;
+}
+#introduce .wrap>ul>li:nth-child(2) {
+  display: grid;
+  grid-template-columns: auto auto 2fr;
+  grid-template-rows: auto auto auto;
+  gap: 25px;
+  padding-bottom: 0;
+}
+#introduce .wrap>ul> li:nth-child(2)> h3 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#introduce .wrap> ul> li:nth-child(2)> p {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+#introduce .wrap > ul > li:nth-child(2) > p::before{
+  content: "";
+  display: inline-block;
+  width:40px;
+  height:40px;
+  background-image: url(../img/icon_speaker.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 94px;
+}
+#introduce>ul> li:nth-child(1)> a {
+
+}
+#introduce .wrap>ul> li:nth-child(2)> a {
+  grid-column: 3;
+  grid-row: 2;
+  align-self: center;
+  justify-self: left;
+  padding: 15px 25px;
+  background-color: #76777E;
+  color: white;
+  font-size: 14px;
+  border-radius: 25px;
+}
+#introduce .wrap > ul > li > a > svg{
+  fill: #09847F;
+  width: 12px;
+  margin-left: 18px;
+}
+#introduce .wrap > ul > li ul{
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+#introduce .wrap > ul > li ul li{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin-bottom: 10px;
+}
+#introduce .wrap > ul > li ul li h4{
+  line-height: 1.6;
+}
+#introduce .wrap > ul > li ul li:last-child h4{
+  letter-spacing: 29px;
+}
+#introduce .wrap > ul > li ul li p{
+  grid-column: 2;
+  line-height: 1.6;
+  color: #555;
+}
+#introduce .wrap > ul > li ul li p:nth-of-type(2){
+  color: #999;
+}
+/* 뉴스  */
+#news {
+  height: auto;
+}
+#news div.wrap {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: calc((100% - 1440px) / 2) 1fr auto;
+  grid-template-rows: auto auto auto;
+  max-width: 100%;
+  overflow: hidden;
+  row-gap: 30px;
+  position: relative;
+  padding-bottom: 50px;
+}
+#news div.wrap h2 {
+  
+  grid-column: 2;
+  grid-row: 1;
+}
+#news div.wrap p {
+  grid-column: 2;
+  grid-row: 2;
+}
+#news div.wrap ul .slick-prev{
+  left: calc((100% - 1440px) / 2);
+}
+#news div.wrap ul .slick-prev::before{
+  color: black;
+}
+#news div.wrap ul .slick-next{
+  left: calc((100% - 1440px) / 2 + 40px);
+  right: initial;
+}
+#news div.wrap ul .slick-next::before{
+  color: black;
+}
+#news div.wrap ul.newsAni{
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  width: 1000px;
+  justify-self: right;
+  position: static;
+}
+#news div.wrap ul.newsAni::before{
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 50px solid #56998c;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(100% - 1075px);
+  top: 0;
+}
+#news div.wrap ul.newsAni .slick-list{
+  padding-left: 0 !important;
+}
+#news div.wrap ul.newsAni li.newslist{
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#news div.wrap ul.newsAni li.news1 {
+
+}
+#news div.wrap ul.newsAni li.news2 {
+
+}
+#news div.wrap ul.newsAni li.news3 {
+
+}
+#news div.wrap ul.newsAni li.news4 {
+
+}
+#news div.wrap ul.newsAni li.newslist a{
+  background-color: #f5f5f8;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  height: 430px;
+}
+#news div.wrap ul.newsAni li.newslist a figure{
+  overflow: hidden;
+  height: 180px;
+  border-radius: 25px;
+}
+#news div.wrap ul.newsAni li.newslist a figure img{
+  width: 100%;
+  background-color: lightgray;
+}
+#news div.wrap ul.newsAni li.newslist a figure .img1{
+  height: 100%;
+}
+#news div.wrap ul.newsAni li.newslist a figure figcaption{
+  
+}
+#news div.wrap ul.newsAni li.newslist a h3{
+  padding: 30px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#news div.wrap ul.newsAni li.newslist a h3::before{
+  content: "NEWS";
+  display: block;
+  color: #09847F;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 7px 10px;
+  width: fit-content;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#news div.wrap ul.newsAni li.newslist a p{
+  
+}
+#news div.wrap .btn{
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc((100% - 1440px) / 2 + 80px)
+}
+#news div.wrap .btn .btn_pause{
+    background-image: url(../img/btn_stop.svg);
+    width: 20px; height: 20px;
+    text-indent: -9999px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+    background-size: contain;
+}
+#news div.wrap .btn .btn_pause.on{
+    background: url('../img/btn_play.svg');
+    width: 20px; height: 20px;
+    text-indent: -9999px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+    background-size: contain;
+}
+/* 가이드 */
+#guide{
+}
+#guide div.wrap{
+  padding: 50px 0;
+}
+#guide div.wrap h2{
+
+}
+#guide div.wrap ul{
+  background-color: #09847f;
+  border-radius: 50px;
+}
+#guide div.wrap ul li{
+  width: 50%;
+  position: relative;
+}
+#guide div.wrap ul li:nth-child(1) a{
+  background-image: url(../img/icon_experience.svg);
+}
+#guide div.wrap ul li:nth-child(1)::after{
+  content: "";
+  border-right: 1px solid #ccc;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  height: calc(100% - 20px);
+  display: block;
+}
+#guide div.wrap ul li:nth-child(2) a{
+  background-image: url(../img/icon_theater.svg);
+}
+#guide div.wrap ul li a{
+  padding: 50px;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-origin: content-box;
+}
+#guide div.wrap ul li a h3{
+
+}
+#guide div.wrap ul li a p{
+  margin-top: 20px;
+  line-height: 1.6;
+}

@@ -1,0 +1,18 @@
+#title .slick-next{
+  right: 125px;
+  z-index: 1;
+}
+#title .slick-next::before{
+  
+}
+#title .slick-prev{
+  left: 125px;
+  z-index: 1;
+}
+#title .slick-prev::before{
+  
+}
+#title .slick-dots{
+  bottom: 100px;
+  z-index: 1;
+}
