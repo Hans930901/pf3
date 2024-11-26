@@ -1,0 +1,27 @@
+#subtitle{
+
+}
+#introduce #subtitle{
+  background-image: url(../img/jpg/img_visual01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  border-radius: 0 0 100px 0;
+}
+#introduce.greeting #subtitle{
+
+}
+#subtitle .wrap{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 30px;
+}
+#subtitle .wrap h2{
+
+}
+#subtitle .wrap p{
+
+}

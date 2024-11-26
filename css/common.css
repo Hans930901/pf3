@@ -1,5 +1,5 @@
 body{
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Pretendard Variable';
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -7,6 +7,9 @@ body{
 .wrap{
   max-width: 1440px;
   margin: 0 auto;
+}
+.grid{
+  display: grid;
 }
 .flex{
   display: flex;

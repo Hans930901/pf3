@@ -29,12 +29,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 
+    <!-- 프리텐다드폰트 -->
+    <link rel="stylesheet" href="css/pretendard/pretendardvariable.css">
+
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> 
     
     <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <!-- 타이틀 slick -->
      <script>
@@ -64,15 +67,35 @@
             });
         });
      </script>
+     <!-- 공지사항 -->
      <script>
         $(document).ready(function(){
+            $(".notice").addClass("noticeUp");
+            $(".notice .close").addClass("closeDown");
+            $("header nav > ul.gnb").removeClass("lineDown");
             $(".notice .close").click(function(){
                 $(".notice").toggleClass("noticeUp");
                 $(".notice .close").toggleClass("closeDown");
-                $("header nav > ul.gnb").toggleClass("lineUp");
+                $("header nav > ul.gnb").toggleClass("lineDown");
             });
-            $("#news").removeClass("h100")
-            $("#guide").removeClass("h100")
+            $("#news").removeClass("h100");
+            $("#guide").removeClass("h100");
+        });
+     </script>
+     <script>
+        $(document).ready(function(){
+            $("header nav > ul.gnb > li ul").hide();
+            $("header nav > ul.gnb > li").hover(
+                function(){
+                // $("header nav > ul.gnb > li ul").fadeIn();
+                $(this).children("ul").stop().fadeIn();
+                $(this).children("ul").animate({"top":"70px"},1000);
+                },
+                function(){
+                $(this).children("ul").stop().fadeOut();
+                $(this).children("ul").animate({"top":"47px"},1000);
+                }
+            );
         });
      </script>
      <!-- aos -->
@@ -99,17 +122,17 @@
         </div>
         <nav>
             <h1>
-                <a href="">독도체험관</a>
+                <a href="index.html">독도체험관</a>
             </h1>
             <ul class="member flex">
                 <li><a href="#">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
             </ul>
-            <ul class="gnb">
+            <ul class="gnb lineDown">
                 <li>
-                    <h2><a href="#">체험관 소개</a></h2>
+                    <h2><a href="greeting.html">체험관 소개</a></h2>
                     <ul class="sub">
-                        <li><a href="#">인사말</a></li>
+                        <li><a href="greeting.html">인사말</a></li>
                         <li><a href="#">체험관 연혁</a></li>
                         <li><a href="#">오시는 길</a></li>
                     </ul>

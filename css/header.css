@@ -69,21 +69,6 @@ header nav h1 a {
   background: url(../img/logo_simbol.svg) no-repeat left, url(../img/logo_tx.svg) no-repeat right;
   background-size: contain, contain;
 }
-header nav h1 a::before{
-  content: "";
-  background-image: url(../img/logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: 50px;
-  height: 26px;
-  vertical-align: -6px;
-  margin-right: 10px;
-  transition: 1s;
-}
-header nav h1 a:hover::before{
-  transform: rotate(23deg);
-}
 header nav>ul.member{
   order: 3;
 }
@@ -119,10 +104,9 @@ header nav > ul.gnb::before{
   height: 130px;
   transition: 1s;
   border-bottom: 1px solid #ccc;
-  transform: translateY(100px);
 }
-header nav > ul.gnb.lineUp::before{
-  transform: translateY(0px);
+header nav > ul.gnb.lineDown::before{
+  transform: translateY(100px);
 }
 header nav > ul.gnb:hover::before{
 }
@@ -138,12 +122,10 @@ header nav>ul.gnb>li>h2 a {
   font-size: 17px;
   color: white;
   font-weight: 700;
-  display: block;
   height: 100%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  /*! border-bottom: 3px solid transparent; */
   position: relative;
   transition: 0.5s;
 }
@@ -168,17 +150,14 @@ header nav>ul.gnb>li>a:hover::after{
 header nav>ul.gnb>li ul.sub{
   text-align: center;
   padding-top: 30px;
-  transition: 1s;
   position: absolute;
   left: 0;
+  top: 47px;
   background-color: white;
   width: 100%;
   border-radius: 14px;
-  display: none;
-  opacity: 0;
 }
   header nav > ul.gnb > li:hover ul.sub{
-  display: initial;
 }
 header nav>ul.gnb>li ul.sub li{
 
