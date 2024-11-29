@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>독도체험관::인사말</title>
+    <title>독도체험관::회원가입</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
@@ -12,7 +12,7 @@
 
     <script src="js/jquery-3.7.1.min.js"></script>
     
-    <link rel="stylesheet" href="css/greeting.css">
+    <link rel="stylesheet" href="css/membersin.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/commonresponsiv.css">
     <link rel="stylesheet" href="css/subresponsive.css">
@@ -48,7 +48,7 @@
     <script src="./typing-text/script.js"></script>
 
 </head>
-<body id="introduce" class="greeting">
+<body id="members">
     <!--  상단영역 -->
     <header>
         <nav>
@@ -101,38 +101,84 @@
     <!-- 타이틀영역 -->
      <div id="subtitle">
         <div class="wrap flex h100">
-            <h2 class="h2T">인사말</h2>
+            <h2 class="h2T">마이페이지</h2>
             <p class="p1">대한민국 독도, 세종에서 만나다!</p>
         </div>
      </div>
     <!-- 메인영역 -->
     <main>
-        <section id="greetingin">
-            <div class="wrap grid">
-                <ul class="flex">
-                    <li><a href="greeting.html" class="block">인사말</a></li>
-                    <li><a href="" class="block">체험관 연혁</a></li>
-                    <li><a href="" class="block">오시는길</a></li>
-                </ul>
-                <figure>
-                    <img src="./img/img_about01.jpg" alt="">
-                    <figcaption class="hide">독도체험관 내부 이미지</figcaption>
-                </figure>
-                <h3 class="h4T">
-                    안녕하십니까?<span class="block"></span>독도와 <strong>독도체험관</strong>을 사랑해 주셔서 진심으로<span class="block"></span>감사드립니다.
-                </h3>
-                <p class="p1">세종특별자치시교육청 독도체험관은 ‘찾아가는 독도교육의 장’으로서, 세종시 지역의 학생, 교원, 학부모, 시민들에게 독도에 대한 이해를 높이고, 독도에 대한 사랑과 영토 주권의식을 확산시키고자 개관하였습니다.</p>
-                <figure>
-                    <img src="./img/img_about02.jpg" alt="">
-                    <figcaption class="hide">독도체험관 내부 이미지</figcaption>
-                </figure>
-                <h3 class="h4T">
-                    <strong>우리민족의 정신이자 자존심인 독도</strong>에 대한<span class="block"></span>
-                    명확한 역사관과 영토관을 갖게되기를<span class="block"></span>희망합니다.
-                </h3>
-                <p class="p1">독도는 우리민족의 정신이자 자존심이므로 우리 학생, 교원, 학부모, 시민들 모두에게 독도에 대한 명확한 역사관과 영토관을 갖게하고, 우리의 소중한 땅 독도를 지키고 가꾸려는 의지를 키우는 것이 이 시대를 사는 우리의 중요한 임무이자 역사적 사명이라 생각합니다.</p>
-                <p class="p1">독도체험관의 다양한 정보가 이곳을 찾는 모든 분들께서 유의미하게 학습‧체험하시는데 작은 도움이 되기를 바라고, 우리 모두가 독도를 사랑하고 실천하는 계기가 되기를 희망하며, 독도체험관이 지역사회의 교육 및 문화공간이 되기를 기대합니다.</p>
-                <p class="p1">감사합니다.</p>
+        <section id="membersin">
+            <div class="wrap">
+                <h3 class="h3T">회원가입</h3>
+                <p class="h3p p1">회원가입에 필요한 정보를 입력해주세요.</p>
+                <form method="post" action="">
+                    <div class="id">
+                        <label for="">회원아이디</label>
+                        <input type="text" name="id">
+                        <button>중복확인</button>
+                        <p>한글, 특수문자를 제외한 4~20자까지의 영문과 숫자로 입력해주세요.</p>
+                    </div>
+                    <div class="password">
+                        <label for="">비밀번호</label><input type="password" name="password">
+                        <p>비밀번호는 8~12자 사이의 영문, 숫자, 특수문자 조합 형태로 입력해 주세요.</p>
+                    </div>
+                    <div class="passwordok">
+                        <label for="">비밀번호확인</label>
+                        <input type="password" name="password">
+                    </div>
+                    <div class="name">
+                        <label for="">이름</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="email">
+                        <label for="">이메일</label>
+                        <input type="text" name="id">@
+                        <select name="" id="">
+                            <option value="">선택하세요</option>
+                            <option value="">naver.com</option>
+                            <option value="">daum.net</option>
+                            <option value="">hanmail.net</option>
+                            <option value="">hotmail.com</option>
+                            <option value="">gmail.com</option>
+                            <option value="">직접입력</option>
+                        </select>
+                        <input type="text" name="id" disabled>
+                    </div>
+                    <div class="gender">
+                        <label for="">성별</label>
+                        <label><span><input type="radio" name="gender" value="men"> 남성</span></label>
+                        <label><span><input type="radio" name="gender" value="woman"> 여성</span></label>
+                    </div>
+                    <div class="contact">
+                        <label for="">연락처</label>
+                        <select name="" id="">
+                            <option value="">010</option>
+                            <option value="">011</option>
+                            <option value="">016</option>
+                            <option value="">017</option>
+                            <option value="">018</option>
+                            <option value="">019</option>
+                        </select>-
+                        <input type="text" name="id">-
+                        <input type="text" name="id">
+                        <p>해당 연락처는 아이디 비밀번호 찾기시 이용합니다.</p>
+                    </div>
+                    <div class="address">
+                        <label for="">주소</label>
+                        <input type="text" name="id">
+                        <button>우편번호검색</button>
+                        <input type="text" name="id">
+                        <input type="text" name="id">
+                    </div>
+                    <div class="Affiliation">
+                        <label for="">소속단체</label>
+                        <input type="text" name="id">
+                    </div>
+                    <span class="terms block">
+                        <button type="button" class="secession block"><span>회원탈퇴</span></button>
+                        <button type="submit" class="join block">회원가입</button>
+                    </span>
+                </form>
             </div>
         </section>
     </main>

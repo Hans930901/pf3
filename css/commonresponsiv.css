@@ -1,0 +1,124 @@
+/* -------------태블릿---------------- */
+@media screen and (max-width:1200px){
+    /*  common  */
+      .wrap{
+      /* padding: 30px 20px !important; */
+      }
+      .h100{
+        min-height: auto;
+      }
+      .h3T {
+        font-size: calc(48px * 0.7);
+      }
+      .h4T {
+        font-size: calc(36px * 0.7);
+      }
+      .h5T {
+        font-size: calc(24px * 0.7);
+      }
+      .h6T {
+        font-size: calc(16px * 0.9);
+      }
+    }/* -----------   1200 end  ---------- */
+    
+/* -------------모바일---------------- */
+@media screen and (max-width:768px){
+        /*  common  */
+        .h1T {
+        font-size:calc(84px * 0.6);
+        }
+        .h3T {
+        font-size:calc(48px * 0.4);
+        }
+        .h4T {
+        font-size: calc(36px * 0.55);
+        }
+        .h6T {
+        font-size: calc(16px * 0.8);
+        }
+        /*  ham  */
+        .ham{
+        display: flex;
+        color: white;
+        }
+        /*  header  */
+        header .notice{
+        display: none;
+        }
+        header nav{
+        padding: 0 16px;
+        height: 80px;
+        }
+        header nav h1 a{
+        width: 200px;
+        background-size: 30px, 170px;
+        }
+        header nav > ul.member{
+        display: none;
+        }
+        header nav > ul.gnb{
+        display: none;
+        }
+    /*  footer  */
+        footer{
+            border-radius: 0; 
+        }
+        footer .top{
+            height: auto;
+            background-position: bottom;
+            background-size: cover;
+        }
+        footer .top p{
+            width: 230px;
+            font-size: 14px;
+        }
+        footer .top ul{
+            width: auto;
+        }
+        footer .top ul li{
+            font-size: 14px;
+        }
+        footer .top ul li:nth-child(1){
+            left: 30px;
+            top: 30px;
+        }
+        footer .top ul li:nth-child(2){
+            right: 85px;
+            bottom: 100px;
+        }
+        footer .top ul li::before{
+            width: 6px;
+            height: 6px;
+            bottom: calc(20px - 8px);
+            left: calc(20px - 8px);
+            }
+        footer .top ul li::after{
+            width: 30px;
+            height: 30px;
+        }
+        footer .wrap{
+            display: flex;
+            flex-direction: column;
+            padding: 0 16px 40px;
+        }
+        footer .wrap address{
+            line-height: 1.4; 
+        }
+        footer .wrap address span{
+            display: block;
+            margin-left: 0;
+            line-height: 1.4;
+        }
+        footer .wrap .mark{
+            height: 80px;
+            margin-top: 30px;
+            order: 4;
+        }
+        footer .wrap .map{
+            display: none;
+        }
+        footer .wrap .copyright{
+            font-size: 13px;
+            margin-top: 30px;
+        }
+    }/* 768 end   */

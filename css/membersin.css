@@ -1,0 +1,165 @@
+#membersin{
+
+}
+#membersin .wrap{
+  padding: 100px 0;
+  text-align: center;
+}
+#membersin .wrap h3{
+    
+}
+#membersin .wrap p{
+    
+}
+#membersin .wrap p.h3p{
+  line-height: 5;
+}
+#membersin .wrap form{
+  border-top: 3px solid;
+}
+#membersin .wrap form div{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+#membersin .wrap form div label:first-child{
+  width: 250px;
+  height: 100%;
+  background-color: #eee;
+  line-height: 70px;
+}
+#membersin .wrap form div label:not(:first-child){
+  cursor: pointer;
+}
+#membersin .wrap form button{
+  cursor: pointer;
+}
+#membersin .wrap form div input[type="text"]{
+  margin: 0 10px 0 20px;
+  grid-column: 2;
+  height: 33px;
+  border: 1px solid #cdcdcd;
+  width: 200px;
+}
+#membersin .wrap form .email input[type=text]:last-of-type{
+  margin: 0 2px;
+}
+#membersin .wrap form div button{
+  justify-self: left;
+  padding: 12px 20px;
+  border: 1px solid #cdcdcd;
+  border-radius: 30px;
+  transition: 1s;
+  font-size: 12px;
+  font-weight: 600;
+}
+#membersin .wrap form div button:hover{
+  box-shadow: 0 10px 20px #999;
+}
+#membersin .wrap form div p{
+  margin-left: 12px;
+  color: #3A9C98;
+  font-size: 14px;
+}
+#membersin .wrap form div input[type="password"]{
+  margin: 0 0 0 20px;
+  height: 33px;
+  border: 1px solid #cdcdcd;
+  width: 200px;
+}
+#membersin .wrap form div select{
+  margin-left: 10px;
+  height: 33px;
+  width: 200px;
+}
+#membersin .wrap form .contact select{
+  margin: 0 10px 0 20px;
+  width: 100px;
+}
+#membersin .wrap form .contact input[type="text"]{
+  margin: 0 10px;
+  width: 100px;
+}
+#membersin .wrap form .contact input[type=text]:last-of-type{
+  margin: 0 0 0 10px;
+}
+#membersin .wrap form .address{
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-template-rows: auto auto auto;
+  height: 155px;
+}
+#membersin .wrap form .address label{
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  line-height: 155px;
+}
+#membersin .wrap form .address input[type=text]:nth-of-type(2){
+  grid-column: 2 / span 2;
+  width: auto;
+}
+#membersin .wrap form .address input[type=text]:nth-of-type(3){
+  grid-column: 2 / span 2;
+  width: auto;
+}
+#membersin .wrap form div span{
+  margin: 0 0 0 20px;
+}
+#membersin .wrap form .Affiliation input{
+  width: 300px !important;
+}
+#membersin .wrap form .terms{
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  gap: 20px;
+}
+#membersin .wrap form .terms button{
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: 1s;
+}
+#membersin .wrap form .terms .secession{
+  background-color: #76777e;
+}
+#membersin .wrap form .terms .secession::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  z-index: 1;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  transform: skew(-20deg);
+  transition: 1s;
+}
+#membersin .wrap form .terms .secession:hover{
+  color: black;
+  box-shadow: 0 10px 20px #999;
+  border: 1px solid #333;
+}
+#membersin .wrap form .terms .secession:hover::before{
+  background: white;
+  width: 120%;
+}
+#membersin .wrap form .terms .secession span{
+  position: relative;
+  z-index: 1;
+  transition: 1s;
+}
+#membersin .wrap form .terms .join{
+  background-color: #2d2b2b;
+}
+#membersin .wrap form .terms .join:hover{
+  background-color: #76777e;
+  box-shadow: 0 10px 20px #999;
+}

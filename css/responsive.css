@@ -1,61 +1,10 @@
 /* -------------태블릿---------------- */
 @media screen and (max-width:1200px){
-/*  공통  */
-  .wrap{
-/*     padding: 30px 20px !important; */
-  }
-  .h3T {
-    font-size: calc(48px * 0.7);
-  }
-  .h4T {
-    font-size: calc(36px * 0.7);
-  }
-  .h5T {
-    font-size: calc(24px * 0.7);
-  }
-  .h6T {
-    font-size: calc(16px * 0.9);
-  }
+
 }/* -----------   1200 end  ---------- */
 
 /* -------------모바일---------------- */
 @media screen and (max-width:768px){
-/* common   */
-  .h1T {
-    font-size:calc(84px * 0.6);
-  }
-  .h3T {
-    font-size:calc(48px * 0.6);
-  }
-  .h4T {
-    font-size: calc(36px * 0.55);
-  }
-  .h6T {
-    font-size: calc(16px * 0.8);
-  }
-/*  ham  */
-  .ham{
-    display: flex;
-    color: white;
-  }
-/*  header  */
-  header .notice{
-    display: none;
-  }
-  header nav{
-    padding: 0 16px;
-    height: 80px;
-  }
-  header nav h1 a{
-    width: 200px;
-    background-size: 30px, 170px;
-  }
-  header nav > ul.member{
-    display: none;
-  }
-  header nav > ul.gnb{
-    display: none;
-  }
 /*  title  */
   div#title{
     min-height: auto;
@@ -88,6 +37,140 @@
   }
   .particle-network-animation{
     display: none;
+  }
+/*  introduce  */
+  main .wrap{
+    padding: 70px 16px;
+  }
+  #introduce div.wrap{
+    display: block;
+    height: auto;
+  }
+  aside{
+    /*! display: none; */
+    top: 10px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+  }
+  aside .apply{
+    font-size: 12px;
+  }
+  aside .apply::before{
+    width: 20px;
+    height: 20px;
+  }
+  #introduce .wrap > ul{
+    display: block;
+  }
+  #introduce .wrap > ul > li{
+    padding: calc(80px * 0.3);
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #eee;
+  }
+  #introduce .wrap > ul > li:nth-child(1){
+    background-size: 75%;
+    margin-bottom: 20px;
+  }
+  #introduce .wrap > ul > li > h3{
+    font-size: calc(28px * 0.7) !important;
+  }
+  #introduce .wrap > ul > li p{
+    font-size: calc(16px * 0.8);
+    word-break: keep-all;
+  }
+  #introduce .wrap > ul > li:nth-child(1) p span{
+    display: none;
+  }
+  #introduce .wrap > ul > li:nth-child(1) a{
+    padding: calc(20px * 0.5) calc(35px * 0.5);
+    border: 2px solid;
+    font-size: calc(16px * 0.7);
+    transform: translateY(-20px);
+  }
+  #introduce .wrap > ul > li > a > svg{
+    width: 10px;
+  }
+  #introduce .wrap > ul > li:nth-child(2) > p{
+    font-size: calc(30px * 0.7);
+  }
+  #introduce .wrap > ul > li:nth-child(2) > p::before{
+    display: none;
+  }
+  #introduce .wrap > ul > li:nth-child(2) > a{
+    padding: calc(15px * 0.7) calc(25px * 0.7);
+    font-size: calc(14px * 0.8);
+  }
+  #introduce .wrap > ul > li ul li p:nth-of-type(2){
+    word-break: keep-all;
+    letter-spacing: 1px;
+  }
+  #introduce .wrap > ul > li ul li:last-child h4{
+    letter-spacing: 10px;
+  }
+  #introduce .wrap > ul > li ul li{
+    grid-template-columns: auto 1fr;
+  }
+  #introduce .wrap > ul > li ul li h4{
+    width: 15.625vw;
+    min-width: 70px;
+  }
+/*  news  */
+  #news div.wrap{
+    display: block;
+  }
+  #news div.wrap h2{
+    margin-bottom: 30px;
+  }
+  #news div.wrap p{
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  #news div.wrap p span{
+    display: none;
+  }
+  #news div.wrap ul.newsAni{
+    width: 100%;
+  }
+  #news div.wrap ul.newsAni .slick-list{
+    padding: 0 !important;
+  }
+/*  guide  */
+  #guide div.wrap{
+    padding: 50px 16px;
+  }
+  #guide div.wrap ul{
+    display: block;
+  }
+  #guide div.wrap ul li{
+    width: 100%;
+  }
+  #guide div.wrap ul li:first-child::after{
+    content: "";
+    display: block;
+    width: calc(100% - 32px);
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    border-right: 0;
+  }
+  #guide div.wrap ul li a{
+    padding: 35px;
+    background-size: 20%;
+    background-position-y: center;
+    position: relative;
+    z-index: 1;
+  }
+  #guide div.wrap ul li a p{
+    width: 70%;
+    font-size: 13px;
+    word-break: keep-all;
+  }
+  #guide div.wrap ul li a p span{
+    display: inline;
   }
 }/* 768 end   */
 

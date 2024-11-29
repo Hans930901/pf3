@@ -1,6 +1,7 @@
 #subtitle{
 
 }
+/* 인사말 */
 #introduce #subtitle{
   background-image: url(../img/jpg/img_visual01.jpg);
   background-repeat: no-repeat;
@@ -24,4 +25,13 @@
 }
 #subtitle .wrap p{
 
+}
+/* 회원가입 */
+#members #subtitle{
+  background-image: url(../img/jpg/img_visual02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  border-radius: 0 0 100px 0;
 }
