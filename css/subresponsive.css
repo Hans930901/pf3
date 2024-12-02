@@ -6,16 +6,16 @@
     
 /* -------------모바일---------------- */
 @media screen and (max-width:768px){
-  #introduce #subtitle{
-    height: 84.63541666666667vw;
-    border-radius: 0;
+  #subtitle{
+    height: 84.63541666666667vw !important;
+    border-radius: 0 !important;
   }
   #subtitle .wrap p{
     font-size: 3.5vw;
   }
+/*  인사말  */
   #greetingin .wrap{
     grid-template-columns: 1fr;
-    padding: 0 16px;
   }
   #greetingin .wrap > *{
     grid-column: 1 !important;
@@ -61,6 +61,74 @@
   #greetingin .wrap p:nth-of-type(3) span{
     margin-top: 0;
     display: inline;
+  }
+/*  회원가입  */
+  #membersin .wrap form div{
+    flex-wrap: wrap;
+    height: auto;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 16px; 
+  }
+  #membersin .wrap form div label:first-child{
+    background-color: transparent;
+    border-right: 0;
+    line-height: 2.5 !important;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    display: block;
+  }
+  #membersin .wrap form div label + input{
+    margin: 15px 0 !important;
+    margin-right: 10px !important; 
+  }
+  #membersin .wrap form div input[type="text"]{
+    margin: 0;
+  }
+  #membersin .wrap form div input[type="password"]{
+    margin: 0;
+    width: 100%;
+  }
+  #membersin .wrap form div p{
+    margin: 0;
+    line-height: 1.2;
+    word-break: keep-all;
+  }
+  #membersin .wrap form div select{
+    margin: 0;
+    width: 100%;
+  }
+  #membersin .wrap form div span{
+  line-height: 3;
+  margin: 0 0 0 10px;
+  }
+  #membersin .wrap form .email input[type="text"]:last-of-type{
+    margin: 5px 0;
+  }
+  #membersin .wrap form .contact select{
+    margin: 5px 10px;
+  }
+  #membersin .wrap form .contact input[type="text"]{
+    margin: 5px 10px !important;
+    width: 175px;
+  }
+  #membersin .wrap form .address{
+    display: block;
+    height: auto;
+  }
+  #membersin .wrap form .address input[type="text"]{
+    width: 60%;
+  }
+  #membersin .wrap form .address input[type="text"]:nth-of-type(2){
+    display: block;
+    width: 60%;
+  }
+  #membersin .wrap form .address input[type="text"]:nth-of-type(3){
+    margin: 15px 0;
+    width: 60%;
+  }
+  #membersin .wrap form .Affiliation input{
+    width: 60% !important;
   }
 }
 /* 768 end   */
